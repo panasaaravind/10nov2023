@@ -1,0 +1,53 @@
+<!docktype html>
+<html lang="en">
+    <head>
+        <title>full stack development</title>
+        <meta charset="utf-8"/>
+        <link href="./css/style.css" rel="stylesheet"/>
+        <style>
+            div{
+                display:inline-block;
+                text-align:center;
+                line-height: 300px;
+                font-size: 5em;
+                font-weight: bold;
+                color: white;
+                font-family: Arial, Helvetica, sans-serif;
+                text-decoration:underline;
+            }
+            [data-a="box1"]{
+                width:300px;
+                height:300px;
+                background-color: orangered;
+                border-top-left-radius: 300px;
+                border-bottom-right-radius: 300px;
+            }
+            .b{
+                width:300px;
+                height:300px;
+                background-color:aqua;
+                transition-property: background-color;
+                transition-duration: 5s;
+                border-top-right-radius: 300px;
+                border-bottom-left-radius: 300px;
+            }
+            .b:hover{
+                background-color: blueviolet;
+            }
+            #cbox{
+                width: 300px;
+                height:300px;
+                background-color:blue;
+                border-top-left-radius: 300px;
+                border-bottom-right-radius: 300px;
+            }
+
+        </style>
+    </head>
+    <body>
+        <div data-a="box1">A</div>
+        <div data-b="box2" class="b" id="bbox">B</div>
+        <div data-c="box3" class="c" id="cbox">C</div>
+        <div data-d="box4" class="d" id="dbox">Danger</div>
+    </body>
+</html>
